@@ -1,0 +1,7 @@
+# Keep the reproducible VS Code lab configuration even though the parent repository ignores .vscode.
+!.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/settings.json

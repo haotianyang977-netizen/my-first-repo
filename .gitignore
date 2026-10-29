@@ -1,3 +1,10 @@
 node_modules/
 .DS_Store
 *.log
+
+# 嵌入式构建产物
+build/
+cmake-build-*/
+# CLion / 其他 IDE
+.idea/
+*.iml

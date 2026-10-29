@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "STM32 Debug (OpenOCD)",
+      "type": "cortex-debug",
+      "request": "launch",
+      "servertype": "openocd",
+      "cwd": "${workspaceFolder}",
+      "device": "STM32F429IG",
+      "executable": "${workspaceFolder}/build/Debug/${workspaceFolderBasename}.elf",
+      "svdFile": "${workspaceFolder}/svd/STM32F429.svd",
+      "configFiles": ["interface/stlink.cfg", "target/stm32f4x.cfg"],
+      "gdbPath": "arm-none-eabi-gdb",
+      "linux": {
+        "gdbPath": "gdb-multiarch"
+      },
+      "runToEntryPoint": "main",
+      "preLaunchTask": "Build Debug"
+    }
+  ]
+}
